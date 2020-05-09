@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+<title>login form</title>
+<style>
+body
+{
+   background-image:linear-gradient(to right,indigo,pink);
+    color:white;
+}
+
+.box
+{
+     height:300px;
+	width:200px;
+        background-image:linear-gradient(90deg,indigo,pink);
+ top:50%;
+ left:50%;
+ position:absolute;
+transform:translate(-50%,-50%);
+border:8px solid purple;
+padding:40px;
+
+
+}
+
+.photo
+{
+    position:absolute;
+    left:calc(50% - 50px);
+    border-radius:50%;
+    top:-50px;
+
+}
+ 
+label
+{
+     font-size:20px;
+}
+#c
+{
+    height:40px;
+     width:180px;
+   background-color:white;
+   border-radius:45%;
+
+}   
+
+#c:hover
+{
+     background-color:lightgrey;
+}
+
+@media(max-width:991px)
+{
+.box {
+    height: 400px;
+    width: 300px;
+    background-image: linear-gradient(90deg,indigo,pink);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border: 8px solid purple;
+    margin:30px;
+    padding: 30px;
+}
+
+label
+{
+     font-size:30px;
+}
+}
+</style>
+</head>
+<body>
+<div class="box">
+<img src="avatar.jpg" height="100px" width="100px" class="photo">
+<br><br><br>
+<form action="/action_page.php" method="get" >
+<label for="a">Username:</label>
+<input type="text" name="uname" placeholder="Enter Username" id="a" required>
+<br><br>
+<label for="b">Password:</label>
+<input type="password" name="pass" placeholder="Enter Password" id="b" required><br><br><br><br>
+<button type="submit" id="c">login</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
