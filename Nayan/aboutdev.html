@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>About Developers</title>
+        <style>
+
+            body
+            {
+                    margin: 0;
+                    padding: 0;
+                    min-height:100vh;
+                    background:black;
+
+
+            }
+
+            .container
+            {
+                position:relative;
+                width:90%;
+                display: flex;
+                justify-content: space-between;
+                align-items:center;
+
+                
+            }
+
+            .container .box
+            {
+                position: relative;
+                height:300px;
+                margin-left:90px;
+                background:black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding:40px;
+                
+              
+               
+
+            }
+
+              .box:before
+                {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    left: -2px;
+                    right: -2px;
+                    bottom:-2px;
+                    transform: skew(2deg,2deg);
+                    background: #fff;
+                    z-index: -1;
+                    
+
+                }
+
+
+            .content
+            {
+                position:relative;
+                padding:20px;
+
+            }
+
+           .box  .content h2
+            {
+                    position: relative;
+                    top:-60px;
+                    right:20px;
+                    margin:0;
+                    padding:0;
+                    font-size:12em;
+                    color:rgba(255,255,255,.2);
+                    transition: 0.5s;
+                    
+
+            }
+
+            .box:hover .content h2
+            {
+                top:-120px;
+
+            }
+
+            .box  .content h3
+            {
+                margin:0 0 10px;
+                padding: 0;
+                font-size:40px;
+                font-weight:500;
+                color:#fff;
+
+
+            }
+
+            .box  .content p
+                {
+                    margin: 0;
+                    padding: 0;
+                    color:#fff;
+                    font-size: 16px;
+
+                }
+
+                h1
+            {
+                color:#fff;
+                font-size:70px;
+                font-weight:800;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: underline;
+            } 
+
+
+            @media(max-width:991px)
+            {
+                h1
+                {
+                    font-size:45px;
+                    font-weight:300px;
+                }
+
+                .container
+            {
+                width:40%;
+               flex-direction:column;
+                padding:40px;
+                margin:40px;
+            }
+
+            .container .box
+            {
+                
+                height:300px;
+                margin-left:90px;
+                margin-bottom:100px;
+                padding:60px;
+                
+              
+               
+
+            }
+
+            .content
+            {
+               
+                padding:5px;
+
+            }
+
+           .box  .content h2
+            {
+                    top:-60px;
+                    font-size:8em;
+                    
+
+            }
+
+            
+
+            .box  .content h3
+            {
+                font-size:30px;
+                font-weight:300;
+
+
+            }
+
+            .box  .content p
+                {
+                   
+                  
+                                      font-size: 16px;
+
+                }
+
+
+
+              
+
+        </style>
+    </head>
+
+    <body>
+        <h1>About Developers</h1>
+        <div class="container">
+            <div class="box">
+                <div class="content">
+                    <h2>01</h2>
+                 <h3>Nayan Gupta</h3>
+                 <p>Section: IT-3 (2nd Sem)<br>Roll No.: 11913042<br>Email: nayan_11913042@nitkkr.ac.in<br>Phone No. : 9467773112<br>
+                </p>
+                </div>
+             </div>
+
+             <div class="box">
+                <div class="content">
+                    <h2>02</h2>
+                 <h3>Nishu</h3>
+                 <p>Section: IT-3 (2nd Sem)<br>Roll No.: 11913054<br>Email: nishu_11913054@nitkkr.ac.in<br>Phone No. : 8690894940<br></p>
+            
+                </div>
+             </div>
+        </div>
+
+
+    </body>
+
+</html>

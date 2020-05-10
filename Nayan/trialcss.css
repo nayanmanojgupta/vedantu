@@ -182,7 +182,7 @@ padding:40px 100px;
    ul li
    {
       float:left;
-      width:200px;
+      width:120px;
       height:40px;
       text-align:center;
        background-color:whitesmoke;
@@ -206,7 +206,7 @@ padding:40px 100px;
 .banner header .toggle
 {
    position:relative;
-   width:180px;
+   width:120px;
    height:28px;
   background:url(toggle.png);
   background-size:cover;
@@ -214,13 +214,7 @@ padding:40px 100px;
 
 }
 
-.banner header .toggle:hover
-{
-       
-        width:180px;
-        height:36px;
 
-}
 
 .banner header .toggle:hover ul
 {
@@ -516,13 +510,19 @@ width:100%;
 {
    .banner .content h2
    {
-      font-size:100px;
+      font-size:80px;
 
+   }
+
+   .banner header .logo
+   {
+      font-size:20px;
+      margin:10px;
    }
 
    .banner .content p 
    {
-          font-size:25px;
+          font-size:20px;
 
    }
 
@@ -530,6 +530,52 @@ width:100%;
    { 
       padding:20px 50px;
 
+   }
+
+   .services
+   {
+      padding:50px;
+   }
+
+   .services .container
+   {
+      justify-content:center;
+      margin-top: 20px;
+   }
+   
+   .client
+   {
+      padding:50px;
+   }
+
+   
+   .testimonials
+   {
+      padding: 50px;
+   }
+
+   .technology  
+{
+   width: 100%;
+   padding: 50px;
+   padding-top: 100px;
+   margin-top: -150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+   .services .container .serviceBx 
+   {
+      margin:20px;
+      width:300px;
+      height:350px;
+   }
+ 
+   .heading
+   {
+      font-size:50px;
    }
 
    .text{
@@ -583,6 +629,49 @@ width:100%;
    justify-content: center;
    align-items: center;
    text-align: left;
+}
+
+
+.loader
+{
+
+   width:100px;
+   height:100px;
+  border-radius:50%;
+   
+}
+
+.loader span
+{
+    
+   width:100px;
+   height:100px;
+    
+
+}
+
+
+
+.loader:after
+{
+    content:'';
+   position:absolute;
+    top:15px;
+    left:15px;
+      right:15px;
+     bottom:15px;
+border-radius:50%;
+  
+}
+
+
+
+.preload p
+{
+    font-size:20px;
+    
+
+
 }
 
 }

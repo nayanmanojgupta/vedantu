@@ -58,14 +58,14 @@ label
 {
 .box {
     height: 400px;
-    width: 300px;
+    width: 250px;
     background-image: linear-gradient(90deg,indigo,pink);
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
     border: 8px solid purple;
-    margin:30px;
+    margin:10px;
     padding: 30px;
 }
 
@@ -82,11 +82,13 @@ label
 <br><br><br>
 <form action="/action_page.php" method="get" >
 <label for="a">Username:</label>
-<input type="text" name="uname" placeholder="Enter Username" id="a" required>
+<input type="email" name="uname" placeholder="Enter Username" id="a" required>
 <br><br>
 <label for="b">Password:</label>
-<input type="password" name="pass" placeholder="Enter Password" id="b" required><br><br><br><br>
-<button type="submit" id="c">login</button>
+<input type="password" name="pass" placeholder="Enter Password" id="b" minlength="6"  maxlength="15" required><br><br><br><br>
+<button type="submit" formaction="index.html"  id="c">login</button>
+
+
 
 </form>
 
